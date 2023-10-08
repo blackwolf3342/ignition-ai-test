@@ -1,0 +1,20 @@
+.landing {
+  &__blocks {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    row-gap: 40px;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 22px;
+    }
+
+    @media (min-width: 992px) {
+      column-gap: 40px;
+      row-gap: 44px;
+    }
+  }
+
+}
