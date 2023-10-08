@@ -1,5 +1,39 @@
 .slider-block {
+  position: relative;
+  max-width: 614px;
+  width: 100%;
   background-color: #FFF;
   padding: 31px 20px 54px;
   border-radius: 14px;
+
+
+  &__btns {
+    display: flex;
+    column-gap: 14px;
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 50px);
+
+  }
+
+  &__prev, &__next {
+    width: 43px;
+    height: 43px;
+    border: 1px solid #434343;
+    border-radius: 50%;
+    background-color: transparent;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:focus {
+      background-color: #434343;
+      svg {
+        path {
+          fill: #FFF;
+        }
+      }
+    }
+  }
 }

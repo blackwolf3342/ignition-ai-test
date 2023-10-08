@@ -4,6 +4,7 @@
   overflow: hidden;
   
 
+
   @media (min-width: 768px) {
     max-height: 364px;
     height: 100%;
@@ -12,6 +13,12 @@
 
   img {
     height: 100%;
+  }
+
+  &.video-opened {
+    &::after, &::before {
+      content: none;
+    }
   }
 
   &::before {

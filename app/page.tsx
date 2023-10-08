@@ -1,4 +1,4 @@
-
+'use client'
 import InfoBlock from '@/components/InfoBlock/InfoBlock'
 import styles from './page.module.scss'
 import Image from 'next/image'
@@ -7,19 +7,31 @@ import Testimony from '@/components/Testimony'
 import VideoBlock from '@/components/VideoBlock'
 
 export default function Landing() {
+
+  const upload = () => {
+    
+    const fileInput = document.getElementById('upload');
+    if(fileInput) {
+      fileInput.click();
+    }
+  }
+
   return (
     <main>
       <div className="container">
         <div className={styles.landing__blocks}>
           <VideoBlock imgUrl='/landing-video.jpeg' videoUrl=''></VideoBlock>
 
-          <InfoBlock>
+          <InfoBlock onClick={upload}>
+            <input type="file" id="upload" style={{'display': 'none'} }/> 
             <Image src="/upload-cv.svg" width={94} height={94} alt='' />
             <h2>Upload CV</h2>
             <h3>( PDF or DOCX )</h3>
           </InfoBlock>
           <SliderBlock>
-            <Testimony avatarUrl='/avatar.jpeg' name='Julie Ruberta' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo eget velit non luctus. Duis at enim eu elit facilisis fermentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo eget velit non luctus. Duis at enim eu elit facilisis fermentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  non luctus.' />
+            <Testimony avatarUrl='/avatar.jpeg' name='Julie Ruberta1' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo eget velit non luctus. Duis at enim eu elit facilisis fermentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo eget velit non luctus. Duis at enim eu elit facilisis fermentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  non luctus.' />
+            <Testimony avatarUrl='/avatar.jpeg' name='Julie Ruberta2' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo eget velit non luctus. Duis at enim eu elit facilisis fermentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo eget velit non luctus. Duis at enim eu elit facilisis fermentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  non luctus.' />
+            <Testimony avatarUrl='/avatar.jpeg' name='Julie Ruberta3' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo eget velit non luctus. Duis at enim eu elit facilisis fermentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo eget velit non luctus. Duis at enim eu elit facilisis fermentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  non luctus.' />
           </SliderBlock>
           <InfoBlock reversed_bg>
             <h1>
