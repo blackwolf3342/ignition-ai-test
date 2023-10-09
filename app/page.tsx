@@ -30,7 +30,7 @@ export default function Landing() {
           </InfoBlock>
           <SliderBlock>
             <Testimony avatarUrl='/avatar-male.jpeg' name='James' text='I have tested out your app and I really liked how simple, detailed and easy to use it is.' />
-            <Testimony avatarUrl='/avatar.jpeg' name='Emilie' text='I appreciate the feedback regarding the CV. \n It’s concise and straight to he point. This is a great tool!' />
+            <Testimony avatarUrl='/avatar.jpeg' name='Emilie' text='I appreciate the feedback regarding the CV. It’s concise and straight to he point. This is a great tool!' />
             <Testimony avatarUrl='/avatar-male2.jpeg' name='Anderson' text='Your app really helped me to evaluate my chances for a job I was applying for. I’ll use it for my future applicaBons.' />
           </SliderBlock>
           <InfoBlock reversed_bg>
