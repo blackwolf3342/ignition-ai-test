@@ -29,9 +29,9 @@ export default function Landing() {
             <h3>( PDF or DOCX )</h3>
           </InfoBlock>
           <SliderBlock>
-            <Testimony avatarUrl='/avatar.jpeg' name='Julie Ruberta1' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo eget velit non luctus. Duis at enim eu elit facilisis fermentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo eget velit non luctus. Duis at enim eu elit facilisis fermentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  non luctus.' />
-            <Testimony avatarUrl='/avatar.jpeg' name='Julie Ruberta2' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo eget velit non luctus. Duis at enim eu elit facilisis fermentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo eget velit non luctus. Duis at enim eu elit facilisis fermentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  non luctus.' />
-            <Testimony avatarUrl='/avatar.jpeg' name='Julie Ruberta3' text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo eget velit non luctus. Duis at enim eu elit facilisis fermentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo eget velit non luctus. Duis at enim eu elit facilisis fermentum.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  non luctus.' />
+            <Testimony avatarUrl='/avatar-male.jpeg' name='James' text='I have tested out your app and I really liked how simple, detailed and easy to use it is.' />
+            <Testimony avatarUrl='/avatar.jpeg' name='Emilie' text='I appreciate the feedback regarding the CV. \n It’s concise and straight to he point. This is a great tool!' />
+            <Testimony avatarUrl='/avatar-male2.jpeg' name='Anderson' text='Your app really helped me to evaluate my chances for a job I was applying for. I’ll use it for my future applicaBons.' />
           </SliderBlock>
           <InfoBlock reversed_bg>
             <h1>
